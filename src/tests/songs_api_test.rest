@@ -10,10 +10,10 @@ POST {{baseUrl}}/songs
 Content-Type: application/json
 
 {
-"title": "Tocando em Frente",
-"artist": "Almir Sater",
-"album": "Raízes",
-"year": 1991
+    "title": "Tocando em Frente",
+    "artist": "Almir Sater",
+    "album": "Raízes",
+    "year": 1991
 }
 
 ### Atualizar uma música
@@ -21,10 +21,10 @@ PUT {{baseUrl}}/songs/{{id_song}}
 Content-Type: application/json
 
 {
-"title": "Tocando em Frente (Ao Vivo)",
-"artist": "Almir Sater",
-"album": "MTV Ao Vivo",
-"year": 1992
+    "title": "Tocando em Frente (Ao Vivo)",
+    "artist": "Almir Sater",
+    "album": "MTV Ao Vivo",
+    "year": 1992
 }
 
 ### Deletar uma música

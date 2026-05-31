@@ -26,11 +26,10 @@ class SongController {
   static async update(req, res) {
     try {
       const id = req.params.id; // Pega o ID da URL
-      await SongService.updateSong(id, req.body); // Chama o service para
-      atualizar;
+      await SongService.updateSong(id, req.body); // Chama o service para atualizar
       res.json({ message: "Música atualizada com sucesso." });
     } catch (error) {
-      res.status(400).json({ error: error.message }); // Retorna erro se não encontrar ou problema nos dados
+      res.status(400).json({ error: error.message }); // Retorna erro se não encontrar ou se tiver problema nos dados
     }
   }
 
